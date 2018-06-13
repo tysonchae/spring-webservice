@@ -64,7 +64,7 @@ public class PostRepositoryTest {
 
         //then
         Posts posts = postsList.get(0);
-        assertTrue(posts.getCreateDate().isAfter(now));
+        assertTrue(posts.getCreatedDate().isAfter(now));
         assertTrue(posts.getModifiedDate().isAfter(now));
     }
 }
