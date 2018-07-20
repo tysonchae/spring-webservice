@@ -21,11 +21,11 @@ public class PostsMainResponseDto {
         id = entity.getId();
         title = entity.getTitle();
         author = entity.getAuthor();
-        modifiedDate = toStringDateTie(entity.getModifiedDate());
+        modifiedDate = toStringDateTime(entity.getModifiedDate());
     }
 
     //Java 8 version
-    private String toStringDateTie(LocalDateTime localDateTime){
+    private String toStringDateTime(LocalDateTime localDateTime){
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         return Optional.ofNullable(localDateTime).map(formatter::format).orElse("");
     }
