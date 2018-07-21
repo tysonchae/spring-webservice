@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 /**
- * Created by oolong on 2018-05-12.
+ * Created by tyson on 2018-05-12.
  */
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
